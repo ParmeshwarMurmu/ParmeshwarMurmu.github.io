@@ -1,8 +1,9 @@
 {
   "files": {
-    "main.css": "/static/css/main.5c4890d6.css",
-    "main.js": "/static/js/main.058538f5.js",
+    "main.css": "/static/css/main.c5ae15f0.css",
+    "main.js": "/static/js/main.c86eef58.js",
     "static/js/787.e8c6061e.chunk.js": "/static/js/787.e8c6061e.chunk.js",
+    "static/media/ThunderTech.png": "/static/media/ThunderTech.eb8e4bea289d96bb30a7.png",
     "static/media/CssLogo.jpg": "/static/media/CssLogo.3c9c48611cd78fc81010.jpg",
     "static/media/ProfilePic.jpg": "/static/media/ProfilePic.58faaaf91d90f4c30ddf.jpg",
     "static/media/JsLogo.jpg": "/static/media/JsLogo.9c8e7dbf1140f5abefbf.jpg",
@@ -10,12 +11,12 @@
     "static/media/AboutMeImage.avif": "/static/media/AboutMeImage.dc85a8a962dffe31d72a.avif",
     "static/media/logo.svg": "/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
     "index.html": "/index.html",
-    "main.5c4890d6.css.map": "/static/css/main.5c4890d6.css.map",
-    "main.058538f5.js.map": "/static/js/main.058538f5.js.map",
+    "main.c5ae15f0.css.map": "/static/css/main.c5ae15f0.css.map",
+    "main.c86eef58.js.map": "/static/js/main.c86eef58.js.map",
     "787.e8c6061e.chunk.js.map": "/static/js/787.e8c6061e.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.5c4890d6.css",
-    "static/js/main.058538f5.js"
+    "static/css/main.c5ae15f0.css",
+    "static/js/main.c86eef58.js"
   ]
 }
