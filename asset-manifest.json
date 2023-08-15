@@ -1,17 +1,17 @@
 {
   "files": {
     "main.css": "/static/css/main.c5ae15f0.css",
-    "main.js": "/static/js/main.82ba3bd9.js",
+    "main.js": "/static/js/main.81f85f03.js",
     "static/js/787.e8c6061e.chunk.js": "/static/js/787.e8c6061e.chunk.js",
     "static/media/ThunderTech.png": "/static/media/ThunderTech.eb8e4bea289d96bb30a7.png",
     "static/media/Profile5.jpg": "/static/media/Profile5.69dc2e9da332db65a435.jpg",
     "index.html": "/index.html",
     "main.c5ae15f0.css.map": "/static/css/main.c5ae15f0.css.map",
-    "main.82ba3bd9.js.map": "/static/js/main.82ba3bd9.js.map",
+    "main.81f85f03.js.map": "/static/js/main.81f85f03.js.map",
     "787.e8c6061e.chunk.js.map": "/static/js/787.e8c6061e.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.c5ae15f0.css",
-    "static/js/main.82ba3bd9.js"
+    "static/js/main.81f85f03.js"
   ]
 }
