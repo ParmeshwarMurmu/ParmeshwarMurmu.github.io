@@ -1,0 +1,15 @@
+.nav {
+    display: flex;
+    justify-content: space-around;
+    /* background-color: aqua; */
+    height: 50px;
+
+}
+
+.allR {
+
+    width: 90%;
+    margin: auto;
+    padding-top: 50px;
+  
+}
