@@ -1,10 +1,10 @@
 
 
-import { Link } from "react-router-dom";
+// import { Link } from "react-router-dom";
 
 // import style from "./Nav.module.css"
 
-import { Center,  HStack, Box } from '@chakra-ui/react'
+import { Center,  HStack, Box} from '@chakra-ui/react'
 import { Theme } from "../Components/Theme";
 
 import { MenuItems } from "../Components/MenuItems";
@@ -12,6 +12,7 @@ import styled from "styled-components";
 import { ResumeButton } from "../Components/ResumeButton";
 import { ModalComp } from "../Comp/ModalComp";
 import { ContactModal } from "../Comp/ContactModal";
+import { Link } from 'react-router-dom';
 
 function Navbar() {
 

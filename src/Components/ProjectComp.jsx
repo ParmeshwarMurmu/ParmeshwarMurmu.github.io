@@ -5,7 +5,7 @@ import { LiveNetlify } from './LiveNetlify'
 import styled from "styled-components"
 
 
-export const ProjectComp = ({ title, image, github, netlify, tech1, tech2, tech3 }) => {
+export const ProjectComp = ({ title, f1, f2, f3, f4, f5, f6,description, image, github, netlify,tech0, tech1, tech2, tech3, tech4, tech5, tech6, tech7 }) => {
   return (
     <DIV>
 
@@ -28,25 +28,57 @@ export const ProjectComp = ({ title, image, github, netlify, tech1, tech2, tech3
           <Text
             fontWeight='bold'
             textTransform='uppercase'
-            fontSize='sm'
+            fontSize='lg'
             letterSpacing='wide'
             color='teal.600'
           >
-            Marketing
+            {title}
           </Text>
-          <Link
+         
+          <Text mt={2} color='gray.700'>
+            {description}
+          </Text>
+
+          <Text  color='gray.700' mt={1}
+              display='block'
+              fontSize='lg'
+              lineHeight='normal'
+              fontWeight='semibold'>
+            Features : 
+          </Text>
+
+          <div>
+            <ul>
+              
+              <div>
+              <li>{f1}</li>
+              <li>{f2}</li>
+              {
+                f5 && <li>{f5}</li>
+              }
+              </div>
+
+              <div>
+              <li>{f3}</li>
+              <li>{f4}</li>
+              {
+                f6 && <li>{f6}</li>
+              }
+              </div>
+            </ul>
+            and many more..
+          </div>
+
+          <Text
+            
+            fontWeight='bold'
+            fontSize='m'
+            letterSpacing='wide'
+            color='BlackAlpha 500'
             mt={1}
-            display='block'
-            fontSize='lg'
-            lineHeight='normal'
-            fontWeight='semibold'
-            href='#'
+
           >
-            Finding customers for your new business
-          </Link>
-          <Text mt={2} color='gray.500'>
-            Getting a new business off the ground is a lot of hard work. Here are five
-            ideas you can use to find your first customers.
+          Collaborative Project
           </Text>
 
           {/* Tech Stack */}
@@ -65,9 +97,24 @@ export const ProjectComp = ({ title, image, github, netlify, tech1, tech2, tech3
             <div>
 
             <div className='projectSkillsParentDiv'>
+            {
+                tech0 && <img  className='projectSkillsImages' src={tech0} alt="" />
+              }
               <img className='projectSkillsImages' src={tech1} alt="" />
               <img  className='projectSkillsImages' src={tech2} alt="" />
               <img  className='projectSkillsImages' src={tech3} alt="" />
+              {
+                tech4 && <img  className='projectSkillsImages' src={tech4} alt="" />
+              }
+              {
+                tech5 && <img  className='projectSkillsImages' src={tech5} alt="" />
+              }
+              {
+                tech6 && <img  className='projectSkillsImages' src={tech6} alt="" />
+              }
+              {
+                tech7 && <img  className='projectSkillsImages' src={tech7} alt="" />
+              }
             </div>
               
             </div>
@@ -92,6 +139,16 @@ export const ProjectComp = ({ title, image, github, netlify, tech1, tech2, tech3
 }
 
 const DIV = styled.div`
+
+ul{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+li{
+  margin-left: 15px;
+}
 
 .projectSkillsImages{
     width:40px;
