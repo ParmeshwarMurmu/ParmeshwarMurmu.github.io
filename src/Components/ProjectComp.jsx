@@ -1,11 +1,11 @@
-import { Box, Image, Link, Text } from '@chakra-ui/react'
+import { Box, Image, Text } from '@chakra-ui/react'
 import React from 'react'
 import { GitHubComp } from './GitHubComp'
 import { LiveNetlify } from './LiveNetlify'
 import styled from "styled-components"
 
 
-export const ProjectComp = ({ title, f1, f2, f3, f4, f5, f6,description, image, github, netlify,tech0, tech1, tech2, tech3, tech4, tech5, tech6, tech7 }) => {
+export const ProjectComp = ({ title, f1, f2, f3, f4, f5, f6, description, image, github, netlify, tech0, tech1, tech2, tech3, tech4, tech5, tech6, tech7 }) => {
   return (
     <DIV>
 
@@ -25,52 +25,59 @@ export const ProjectComp = ({ title, f1, f2, f3, f4, f5, f6,description, image, 
 
         </Box>
         <Box mt={{ base: 4, md: 0 }} ml={{ md: 6 }}>
-          <Text
-            fontWeight='bold'
-            textTransform='uppercase'
-            fontSize='lg'
-            letterSpacing='wide'
-            color='teal.600'
-          >
-            {title}
-          </Text>
-         
-          <Text mt={2} color='gray.700'>
+          <div className="project-title">
+
+            <Text
+              fontWeight='bold'
+              textTransform='uppercase'
+              fontSize='lg'
+              letterSpacing='wide'
+              color='teal.600'
+            >
+              {title}
+            </Text>
+          </div>
+
+          <div className="project-description">
+
+          <Text mt={2} color='gray.700' >
             {description}
           </Text>
+          </div>
 
-          <Text  color='gray.700' mt={1}
-              display='block'
-              fontSize='lg'
-              lineHeight='normal'
-              fontWeight='semibold'>
-            Features : 
+
+          <Text color='gray.700' mt={1}
+            display='block'
+            fontSize='lg'
+            lineHeight='normal'
+            fontWeight='semibold'>
+            Features :
           </Text>
 
           <div>
             <ul>
-              
+
               <div>
-              <li>{f1}</li>
-              <li>{f2}</li>
-              {
-                f5 && <li>{f5}</li>
-              }
+                <li>{f1}</li>
+                <li>{f2}</li>
+                {
+                  f5 && <li>{f5}</li>
+                }
               </div>
 
               <div>
-              <li>{f3}</li>
-              <li>{f4}</li>
-              {
-                f6 && <li>{f6}</li>
-              }
+                <li>{f3}</li>
+                <li>{f4}</li>
+                {
+                  f6 && <li>{f6}</li>
+                }
               </div>
             </ul>
             and many more..
           </div>
 
           <Text
-            
+
             fontWeight='bold'
             fontSize='m'
             letterSpacing='wide'
@@ -78,54 +85,54 @@ export const ProjectComp = ({ title, f1, f2, f3, f4, f5, f6,description, image, 
             mt={1}
 
           >
-          Collaborative Project
+            Collaborative Project
           </Text>
 
           {/* Tech Stack */}
 
-          <div>
+          <div className='project-tech-stack'>
             <div>
               <Text
-              mt={1}
-              display='block'
-              fontSize='lg'
-              lineHeight='normal'
-              fontWeight='semibold'
+                mt={1}
+                display='block'
+                fontSize='lg'
+                lineHeight='normal'
+                fontWeight='semibold'
               >Tech Stack : </Text>
             </div>
 
             <div>
 
-            <div className='projectSkillsParentDiv'>
-            {
-                tech0 && <img  className='projectSkillsImages' src={tech0} alt="" />
-              }
-              <img className='projectSkillsImages' src={tech1} alt="" />
-              <img  className='projectSkillsImages' src={tech2} alt="" />
-              <img  className='projectSkillsImages' src={tech3} alt="" />
-              {
-                tech4 && <img  className='projectSkillsImages' src={tech4} alt="" />
-              }
-              {
-                tech5 && <img  className='projectSkillsImages' src={tech5} alt="" />
-              }
-              {
-                tech6 && <img  className='projectSkillsImages' src={tech6} alt="" />
-              }
-              {
-                tech7 && <img  className='projectSkillsImages' src={tech7} alt="" />
-              }
-            </div>
-              
+              <div className='projectSkillsParentDiv project-tech-stack'>
+                {
+                  tech0 && <img className='projectSkillsImages' src={tech0} alt="" />
+                }
+                <img className='projectSkillsImages' src={tech1} alt="" />
+                <img className='projectSkillsImages' src={tech2} alt="" />
+                <img className='projectSkillsImages' src={tech3} alt="" />
+                {
+                  tech4 && <img className='projectSkillsImages' src={tech4} alt="" />
+                }
+                {
+                  tech5 && <img className='projectSkillsImages' src={tech5} alt="" />
+                }
+                {
+                  tech6 && <img className='projectSkillsImages' src={tech6} alt="" />
+                }
+                {
+                  tech7 && <img className='projectSkillsImages' src={tech7} alt="" />
+                }
+              </div>
+
             </div>
           </div>
 
           {/* Github netlifuy */}
           <div className='gitHubNetlify'>
-            <div>
+            <div className='project-github-link'>
               <GitHubComp github={github} />
             </div>
-            <div>
+            <div className='project-deployed-link'>
               <LiveNetlify netlify={netlify} />
             </div>
           </div>

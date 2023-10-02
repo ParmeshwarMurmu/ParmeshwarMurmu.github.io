@@ -1,8 +1,10 @@
 
 function About(){
 
-    return <div  id="about" className="about section" class="nav-link about">
+    return <div >
+    <div>
     <h1>About Page</h1>
+    </div>
     </div>
 
 }

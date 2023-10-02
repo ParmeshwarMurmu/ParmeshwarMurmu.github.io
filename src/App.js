@@ -18,18 +18,19 @@ function App() {
   return (
     <DIV theme={theme}>
 
-      <div className='navComp' id="nav-menu">
+      <div className='navComp' >
        
 
        <Name />
 
         <div id="nav-menu" style={{ width: "65%" , paddingTop: "7px"}}>
-          <Navbar />
+          <Navbar  />
         </div>
+
       </div>
   
       
-      <div style={{marginTop: "50px", border: "2px solid red", paddingTop: "40px"}}>
+      <div style={{marginTop: "50px",  paddingTop: "40px"}}>
     
       <AllRoutes  />
 

@@ -3,7 +3,7 @@ import styled from "styled-components"
 
 export const ProjectCardComp = () => {
   return (
-    <DIV>
+    <DIV className="project-card">
       <div class="card">
         <div class="card-content">
           <p class="card-title">Card hover effect
