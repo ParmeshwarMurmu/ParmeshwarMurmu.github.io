@@ -39,7 +39,7 @@ function Navbar() {
       'https://drive.google.com/file/d/1VuYpktkJfHhLJuoRFZf4bTye4sqX7hOM/view?usp=drive_link',
       "_blank"
     )
-    
+
     const url = ParmeshwarMurmuResume
 
 
@@ -126,7 +126,7 @@ function Navbar() {
 
       </Center>
 
-      <Center >
+      <Center className='Home'>
         <Box as='span' fontWeight='bold' fontSize='lg'>
 
           <Link to="/">
@@ -466,15 +466,8 @@ const DIV = styled.div`
 
 
 
-.cont{
-    /* border: 2px solid rgb(243, 255, 8); */
-}
 
-/* .allR{
-    
-    width: 90%;
-    margin: auto;
-} */
+
 
     .menuItems{
         display: none;
@@ -486,13 +479,13 @@ const DIV = styled.div`
         display: block;
       }
 
-      .aboutSec{
+      #about{
         display: none;
       }
 
-      /* .contact{
+      #contact{
         display: none;
-      } */
+      }
 
 
       
@@ -501,7 +494,7 @@ const DIV = styled.div`
     @media screen and (max-width: 885px) {
       /* Your styles for large devices go here */
 
-      .home{
+      .Home{
         display: none
       }
 
@@ -552,18 +545,16 @@ const DIV = styled.div`
      }
 
      .menuItems{
-        /* background-color: yellow; */
-        /* display: flex; */
-        /* flex-direction: row-reverse; */
+        
         padding-right: 15px;
 
      }
 
      .nav{
-        /* flex-direction: row-reverse; */
+      
         display: flex;
         justify-content: flex-end;
-        /* border: 2px solid red; */
+
         margin-top: 5px;
         
      }

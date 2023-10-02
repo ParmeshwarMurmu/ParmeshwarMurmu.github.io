@@ -1,10 +1,13 @@
 import { Link } from '@chakra-ui/react';
-import React from 'react'
+import React, { useContext } from 'react'
 import styled from "styled-components";
+import { AppContent } from '../Context/ContextApi';
 
 export const GitHubComp = ({github}) => {
+
+  const {theme} = useContext(AppContent)
     return (
-        <DIV>
+        <DIV theme={theme}>
             <Link href={github} target='_blank'  style={{ textDecoration: 'none' }}>
             <button class="button">
                 <svg width="15" height="15" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -25,7 +28,7 @@ const DIV = styled.div`
   align-items: center;
   padding: 5px 10px;
   gap: 15px;
-  background-color: #181717;
+  background-color: #151313;
   outline: 3px #181717 solid;
   outline-offset: -3px;
   border-radius: 5px;
@@ -47,14 +50,17 @@ const DIV = styled.div`
 }
 
 .button:hover {
-  background-color: transparent;
+  /* background-color: transparent; */
+  background-color: ${props => (props.theme === "lightTheme" ? "#ffffff" : "#ffffff")}
 }
 
 .button:hover .text {
   color: #181717;
+
 }
 
 .button:hover svg path {
+  /* fill: ${props => (props.theme === "lightTheme" ? "#000000" : "#ffffff")}; */
   fill: #181717;
 }
 

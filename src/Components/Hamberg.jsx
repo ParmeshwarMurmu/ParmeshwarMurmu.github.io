@@ -1,9 +1,14 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import styled from 'styled-components';
+import { AppContent } from '../Context/ContextApi';
 
 export const Hamberg = () => {
+  
+  const {theme} = useContext(AppContent)
+  console.log("hamBerg Theme", theme)
+
     return (
-        <DIV className='hamberg'>
+        <DIV className='hamberg' theme={theme}>
             <label class="burger" for="burger">
                 <input type="checkbox" id="burger" />
                     <span></span>
@@ -19,6 +24,7 @@ const DIV = styled.div`
 .hamberg{
     display: none;
 }
+
 
 
 /* media screen */
@@ -46,7 +52,7 @@ const DIV = styled.div`
   position: absolute;
   height: 4px;
   width: 100%;
-  background: black;
+  background-color: ${props => (props.theme === "lightTheme" ?  " #000000" : " #eedcdc")};
   border-radius: 9px;
   opacity: 1;
   left: 0;
