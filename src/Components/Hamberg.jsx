@@ -21,9 +21,9 @@ export const Hamberg = () => {
 
 const DIV = styled.div`
 
-.hamberg{
+/* .hamberg{
     display: none;
-}
+} */
 
 
 

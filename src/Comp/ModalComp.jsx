@@ -59,7 +59,7 @@ export const ModalComp = () => {
       <Button colorScheme='blue' mr={3} onClick={onClose}>
         Close
       </Button>
-      <Button variant='ghost'>Secondary Action</Button>
+      
     </ModalFooter>
   </ModalContent>
 </Modal>
@@ -201,6 +201,10 @@ const DIV = styled.div`
 .buttonNav:active {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   transform: scale(0.95);
+}
+
+.resume{
+  margin-top: 20px;
 }
 
 

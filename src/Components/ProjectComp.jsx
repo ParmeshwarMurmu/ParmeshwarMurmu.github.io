@@ -54,7 +54,7 @@ export const ProjectComp = ({ title, f1, f2, f3, f4, f5, f6, description, image,
             Features :
           </Text>
 
-          <div>
+          {/* <div>
             <ul>
 
               <div>
@@ -74,7 +74,7 @@ export const ProjectComp = ({ title, f1, f2, f3, f4, f5, f6, description, image,
               </div>
             </ul>
             and many more..
-          </div>
+          </div> */}
 
           <Text
 
@@ -166,19 +166,17 @@ li{
 }
 
 .projectSkillsParentDiv{
-     /* margin:0px 10px 5px 0px; */
      display: flex;
-     /* align-items: center; */
-     /* border: ${props => (props.theme === "lightTheme" ? "2px solid #000000" : "2px solid #ffffff")}; */
      padding:5px 5px;
      border-radius: 15px;
+     flex-wrap: wrap;
     
 }
 
 .ProjectThumbnail:hover{
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-  -ms-transform: scale(1.0); /* IE 9 */
-  -webkit-transform: scale(1.1); /* Safari 3-8 */
+  -ms-transform: scale(1.0); 
+  -webkit-transform: scale(1.1); 
   transform: scale(1.1); 
   cursor: pointer;
 }
