@@ -1,13 +1,18 @@
 import { Box, Image, Text } from '@chakra-ui/react'
-import React from 'react'
+import React, { useContext } from 'react'
 import { GitHubComp } from './GitHubComp'
 import { LiveNetlify } from './LiveNetlify'
 import styled from "styled-components"
+import { AppContent } from '../Context/ContextApi'
+
 
 
 export const ProjectComp = ({ title, f1, f2, f3, f4, f5, f6, description, image, github, netlify, tech0, tech1, tech2, tech3, tech4, tech5, tech6, tech7 }) => {
+  
+  const {theme} = useContext(AppContent)
+  
   return (
-    <DIV>
+    <DIV theme={theme} >
 
       <Box p={4} display={{ md: 'flex' }}>
         <Box flexShrink={0}>
@@ -40,7 +45,7 @@ export const ProjectComp = ({ title, f1, f2, f3, f4, f5, f6, description, image,
 
           <div className="project-description">
 
-          <Text mt={2} color='gray.700' >
+          <Text mt={2} color='gray.700' className='project-description' >
             {description}
           </Text>
           </div>
@@ -107,9 +112,12 @@ export const ProjectComp = ({ title, f1, f2, f3, f4, f5, f6, description, image,
                 {
                   tech0 && <img className='projectSkillsImages' src={tech0} alt="" />
                 }
-                <img className='projectSkillsImages' src={tech1} alt="" />
-                <img className='projectSkillsImages' src={tech2} alt="" />
-                <img className='projectSkillsImages' src={tech3} alt="" />
+                { tech1 && <img className='projectSkillsImages' src={tech1} alt="" /> }
+
+                { tech2 && <img className='projectSkillsImages' src={tech2} alt="" /> }
+                
+                { tech3 && <img className='projectSkillsImages' src={tech3} alt="" /> }
+
                 {
                   tech4 && <img className='projectSkillsImages' src={tech4} alt="" />
                 }
@@ -191,6 +199,11 @@ li{
  margin: 20px 20px 0px 0px ;
 
 }
+
+.project-description{
+  color: ${props => (props.theme === "lightTheme" ? `#2D3748` : " #ffffff")};
+}
+  
 
 
 
