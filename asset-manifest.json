@@ -1,8 +1,10 @@
 {
   "files": {
-    "main.css": "/static/css/main.34b93c7b.css",
-    "main.js": "/static/js/main.6f0cfff5.js",
+    "main.css": "/static/css/main.8c552602.css",
+    "main.js": "/static/js/main.ac7cf868.js",
     "static/js/787.e8c6061e.chunk.js": "/static/js/787.e8c6061e.chunk.js",
+    "static/media/backgroundImage.jpg": "/static/media/backgroundImage.1a21bceea9ca18810b96.jpg",
+    "static/media/About.jpg": "/static/media/About.e95502084960c956e8fe.jpg",
     "static/media/TravelWiz.png": "/static/media/TravelWiz.24c6532ae4f2c8d4270b.png",
     "static/media/Artist Thumbnail.png": "/static/media/Artist Thumbnail.c4b74a551bd59c0dbecc.png",
     "static/media/E-CartThumbnail.png": "/static/media/E-CartThumbnail.0b3d8ad3d79ba233d4ee.png",
@@ -12,12 +14,12 @@
     "static/media/Parmeshwar-Murmu-Resume.pdf": "/static/media/Parmeshwar-Murmu-Resume.23fdd10c4a86269edb47.pdf",
     "static/media/Profile5.jpg": "/static/media/Profile5.69dc2e9da332db65a435.jpg",
     "index.html": "/index.html",
-    "main.34b93c7b.css.map": "/static/css/main.34b93c7b.css.map",
-    "main.6f0cfff5.js.map": "/static/js/main.6f0cfff5.js.map",
+    "main.8c552602.css.map": "/static/css/main.8c552602.css.map",
+    "main.ac7cf868.js.map": "/static/js/main.ac7cf868.js.map",
     "787.e8c6061e.chunk.js.map": "/static/js/787.e8c6061e.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.34b93c7b.css",
-    "static/js/main.6f0cfff5.js"
+    "static/css/main.8c552602.css",
+    "static/js/main.ac7cf868.js"
   ]
 }
