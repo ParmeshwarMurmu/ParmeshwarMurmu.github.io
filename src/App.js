@@ -8,16 +8,18 @@ import { Name } from './Components/Name';
 import { useContext } from 'react';
 import { AppContent } from './Context/ContextApi';
 import { Footer } from './Comp/Footer';
-
-
+import './App.css'
+import backGround from './Images/backgroundImage.jpg'
 
 
 function App() {
 
   const {theme} = useContext(AppContent)
   return (
-    <DIV theme={theme}>
+    <DIV theme={theme} >
+     {/* <img className='backgroundImage' src={backGround} alt='' /> */}
 
+     {/* <div className='content'> */}
       <div className='navComp' >
        
 
@@ -39,6 +41,7 @@ function App() {
       <div>
         <Footer />
       </div>
+      {/* </div> */}
     </DIV>
   );
 }

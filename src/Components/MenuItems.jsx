@@ -24,11 +24,12 @@ import {
 
 import { Hamberg } from './Hamberg'
 import styled from "styled-components"
-import { Link } from 'react-router-dom'
+// import { Link } from 'react-router-dom'
 
 import { ContactModal } from '../Comp/ContactModal'
 import { ModalComp } from '../Comp/ModalComp'
 import ParmeshwarMurmuResume from '../Images/Parmeshwar-Murmu-Resume.pdf'
+import { Link } from 'react-scroll';
 
 
 export const MenuItems = () => {
@@ -38,7 +39,7 @@ export const MenuItems = () => {
   const ResumeHandler3 = () => {
 
     window.open(
-      'https://drive.google.com/file/d/1VuYpktkJfHhLJuoRFZf4bTye4sqX7hOM/view?usp=drive_link',
+      'https://drive.google.com/file/d/137cjVUnXbYQ9SzVvXjTOAgEe2HNeHJKJ/view?usp=drive_link',
       "_blank"
     )
     
@@ -79,7 +80,7 @@ export const MenuItems = () => {
 
   const ResumeHandler = ()=>{
     window.open(
-      'https://drive.google.com/file/d/1VuYpktkJfHhLJuoRFZf4bTye4sqX7hOM/view?usp=drive_link',
+      'https://drive.google.com/file/d/137cjVUnXbYQ9SzVvXjTOAgEe2HNeHJKJ/view?usp=drive_link',
       "_blank"
     )
 
@@ -127,7 +128,7 @@ export const MenuItems = () => {
         <MenuList>
 
         <MenuItem className='homeSection'>
-            <Link to="/">
+            <Link to="HomeSection" smooth={true} duration={500} offset={-50}>
               <button class="buttonNav" style={{width: "57%"}}>
                 Home
               </button>
@@ -136,7 +137,7 @@ export const MenuItems = () => {
 
 
           <MenuItem className='skillsSection'>
-            <Link to="/skills" >
+            <Link to="skillsSection" smooth={true} duration={500} offset={-50} >
               <button class="buttonNav" style={{width: "57%"}}>
                 skills
               </button>
@@ -144,7 +145,7 @@ export const MenuItems = () => {
           </MenuItem>
 
           <MenuItem className='projectsSection'>
-            <Link to="/project" >
+            <Link to="ProjectSection" smooth={true} duration={500} offset={-50}>
               <button class="buttonNav">
                 Projects
               </button>

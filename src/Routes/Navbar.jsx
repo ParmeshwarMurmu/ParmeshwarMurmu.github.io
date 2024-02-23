@@ -6,12 +6,11 @@ import { Theme } from "../Components/Theme";
 
 import { MenuItems } from "../Components/MenuItems";
 import styled from "styled-components";
-import { ResumeButton } from "../Components/ResumeButton";
-import { ModalComp } from "../Comp/ModalComp";
-import { ContactModal } from "../Comp/ContactModal";
-import { Link } from 'react-router-dom';
-import ParmeshwarMurmuResume from "../Images/Parmeshwar-Murmu-Resume.pdf"
 
+import { ContactModal } from "../Comp/ContactModal";
+// import { Link } from 'react-router-dom';
+import ParmeshwarMurmuResume from "../Images/Parmeshwar-Murmu-Resume.pdf"
+import { Link } from 'react-scroll';
 
 import {
   Modal,
@@ -36,7 +35,7 @@ function Navbar() {
  
   const ResumeHandler = ()=>{
     window.open(
-      'https://drive.google.com/file/d/1VuYpktkJfHhLJuoRFZf4bTye4sqX7hOM/view?usp=drive_link',
+      'https://drive.google.com/file/d/137cjVUnXbYQ9SzVvXjTOAgEe2HNeHJKJ/view?usp=drive_link',
       "_blank"
     )
 
@@ -77,7 +76,7 @@ function Navbar() {
   const ResumeHandler3 = () => {
 
     window.open(
-      'https://drive.google.com/file/d/1VuYpktkJfHhLJuoRFZf4bTye4sqX7hOM/view?usp=drive_link',
+      'https://drive.google.com/file/d/137cjVUnXbYQ9SzVvXjTOAgEe2HNeHJKJ/view?usp=drive_link',
       "_blank"
     )
     
@@ -129,7 +128,7 @@ function Navbar() {
       <Center className='Home'>
         <Box as='span' fontWeight='bold' fontSize='lg'>
 
-          <Link to="/">
+          <Link to="HomeSection" smooth={true} duration={500} offset={-50}>
             <button className="buttonNav">
               Home
             </button>
@@ -141,7 +140,8 @@ function Navbar() {
 
       <Center id="skills" className="nav-link skills">
         <Box as='span' fontWeight='bold' fontSize='lg'>
-          <Link to={'/skills'}  >
+        {/* to={'/skills'}  */}
+          <Link to="skillsSection" smooth={true} duration={500} offset={-50} >
             <button className="buttonNav">
               Skills
             </button>
@@ -152,8 +152,8 @@ function Navbar() {
 
       <Center id="projects" className="nav-link projects project">
         <Box as='span' fontWeight='bold' fontSize='lg'>
-        
-          <Link to='/project'>
+        {/* to='/project' */}
+          <Link  to="ProjectSection" smooth={true} duration={500} offset={-50}>
             <button className="buttonNav" id="projects">
               Projects
             </button>
